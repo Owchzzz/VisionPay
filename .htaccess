@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|images|robots\.txt)
+RewriteCond $1 !^media/
+RewriteCond $1 !^old/
+RewriteCond $1 !^uploads/
+RewriteRule ^(.*)$ /index.php/$1 [L]
+php_flag display_errors on
